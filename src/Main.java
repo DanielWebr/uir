@@ -11,17 +11,6 @@ import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 
-enum ClassificatorType {
-    BAYES,
-    CUSTOM1
-}
-
-enum ParametrizatorType {
-    CUSTOM1,
-    CUSTOM2,
-    CUSTOM3
-}
-
 public class Main {
     public static void main(String[] args) throws IOException {
         boolean trainMode = args.length == 6;
@@ -141,8 +130,11 @@ public class Main {
         JTextArea textArea = new JTextArea();
         frame.add(textArea,BorderLayout.CENTER);
 
+        Model model = null;
+        //TODO nacist model ze souboru
+
         classifyButton.addActionListener(e -> {
-            String resultClass = getTextClass(modelName,textArea.getText() );
+            String resultClass = getTextClass(model,textArea.getText() );
             resultClassLabel.setText("Class: "+resultClass);
         });
 
@@ -151,10 +143,9 @@ public class Main {
         frame.setVisible(true);
     }
 
-    private static String getTextClass(String modelName, String text) {
-        //TODO nacist model podle jmena
-        //return model.getClass(text)
-        return "Test";
+    private static String getTextClass(Model model, String text) {
+        //return model.getClass(text);
+        return "";
     }
 
     private static ArrayList<Data> getDataFromFile(File[] files){
