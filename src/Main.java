@@ -79,6 +79,11 @@ public class Main {
         File[] trainData = trainDataFolder.listFiles();
         File[] testData = testDataFolder.listFiles();
 
+        if(trainData == null || testData == null){
+            System.out.print("Wrong test or train data");
+            return;
+        }
+
         switch(classificatorType){
             case BAYES:{
                 classificator = new BayesClassificator();
@@ -107,8 +112,8 @@ public class Main {
         }
 
         Model model = new Model(classificator,parametrizator);
-        model.train(trainData);
-        double accuracy = model.test(testData);
+        model.train(getDataFromFile(trainData));
+        double accuracy = model.test(getDataFromFile(testData));
         //TODO ulozit model
 
         System.out.println("Model saved, accuracy: "+accuracy+"%");
@@ -150,6 +155,21 @@ public class Main {
         //TODO nacist model podle jmena
         //return model.getClass(text)
         return "Test";
+    }
+
+    private static ArrayList<Data> getDataFromFile(File[] files){
+        ArrayList<Data> data = new ArrayList<>();
+
+        for(File file : files ){
+            ArrayList<String> classes = new ArrayList<String>();
+            String text = "";
+
+            //TODO vyndat z filu tridy a text
+
+            data.add(new Data(classes,text));
+        }
+
+        return data;
     }
 
 

@@ -13,12 +13,12 @@ public class Model {
         this.parametrizator = parametrizator;
     }
 
-    public void train(File[] trainData){
+    public void train(ArrayList<Data> trainData){
         //TODO natrenovat model
     }
 
-    public double test(File[] testData){
-        double testingDataLength = testData.length;
+    public double test(ArrayList<Data> testData){
+        double testingDataLength = testData.size();
         int numOfErrors = 0;
 
         //TODO otestovat vse pomoci getClass a porovnat vysledky se spravnymi daty
@@ -31,16 +31,5 @@ public class Model {
         double parameter = parametrizator.getParameter(text);
         return classificator.getClass(parameter);
     }
-
-
-    private Data getDataFromFile(){
-        ArrayList<String> classes = new ArrayList<String>();
-        String text = "";
-
-        //TODO vyndat z filu tridy a text
-
-        return new Data(classes,text);
-    }
-
 
 }
