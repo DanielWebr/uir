@@ -10,6 +10,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -21,10 +22,10 @@ public class Main {
         }
         if(trainMode){
             File classesFile = new File(args[0]) ;
-            File trainData = new File(args[1]);
-            File testData = new File(args[2]);
+            File trainDataFolder = new File(args[1]);
+            File testDataFolder = new File(args[2]);
 
-            if(!classesFile.exists() ||  !trainData.exists()  || !testData.exists()){
+            if(!classesFile.exists() ||  !trainDataFolder.exists()  || !testDataFolder.exists()){
                 System.out.print("Files or file does not exist");
                 return;
             }
@@ -51,6 +52,17 @@ public class Main {
                 e.printStackTrace();
             }
 
+            File[] trainDataFiles = trainDataFolder.listFiles();
+            File[] testDataFiles = testDataFolder.listFiles();
+
+            if(trainDataFiles == null || testDataFiles == null){
+                System.out.print("Wrong test or train data");
+                return;
+            }
+
+            ArrayList<Data> trainData = getDataFromFiles(trainDataFiles);
+            ArrayList<Data> testData = getDataFromFiles(testDataFiles);
+
             train(classes,trainData,testData,classificatorType,parametrizatorType,model);
 
         }
@@ -61,17 +73,9 @@ public class Main {
         }
     }
 
-    public static void train(ArrayList<String> classes, File trainDataFolder, File testDataFolder, ClassificatorType classificatorType, ParametrizatorType parametrizatorType, String modelName)  {
+    public static void train(ArrayList<String> classes, ArrayList<Data> trainData, ArrayList<Data> testData, ClassificatorType classificatorType, ParametrizatorType parametrizatorType, String modelName)  {
         Classificator classificator;
         Parametrizator parametrizator;
-
-        File[] trainData = trainDataFolder.listFiles();
-        File[] testData = testDataFolder.listFiles();
-
-        if(trainData == null || testData == null){
-            System.out.print("Wrong test or train data");
-            return;
-        }
 
         switch(classificatorType){
             case BAYES:{
@@ -101,11 +105,29 @@ public class Main {
         }
 
         Model model = new Model(classificator,parametrizator);
-        model.train(getDataFromFile(trainData));
-        double accuracy = model.test(getDataFromFile(testData));
+
+        for(Data data : trainData){
+            model.train(data.text,data.classes);
+        }
+
+        double accuracy = testData(testData,model);
+
         //TODO ulozit model
 
         System.out.println("Model saved, accuracy: "+accuracy+"%");
+    }
+
+    public static double testData(ArrayList<Data> testData, Model model){
+        double testingDataLength = testData.size();
+        int numOfErrors = 0;
+
+        for(Data data : testData){
+            String resultClass = model.getClass(data.text);
+            if(!data.classes.contains(resultClass)){
+                numOfErrors++;
+            }
+        }
+        return 1-(numOfErrors/testingDataLength);
     }
 
     public static void classify(String modelName){
@@ -144,20 +166,30 @@ public class Main {
     }
 
     private static String getTextClass(Model model, String text) {
-        //return model.getClass(text);
+        //TODO return model.getClass(text);
         return "";
     }
 
-    private static ArrayList<Data> getDataFromFile(File[] files){
+    private static ArrayList<Data> getDataFromFiles(File[] files) throws IOException {
         ArrayList<Data> data = new ArrayList<>();
 
         for(File file : files ){
             ArrayList<String> classes = new ArrayList<String>();
-            String text = "";
+            StringBuilder text = new StringBuilder();
 
-            //TODO vyndat z filu tridy a text
+            try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+                String line;
+                line = br.readLine();
+                classes.addAll(Arrays.asList(line.split(" ")));
+                br.readLine();
+                while ((line = br.readLine()) != null) {
+                    text.append(line);
+                }
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
 
-            data.add(new Data(classes,text));
+            data.add(new Data(classes,text.toString()));
         }
 
         return data;

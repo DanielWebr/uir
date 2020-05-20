@@ -13,18 +13,8 @@ public class Model {
         this.parametrizator = parametrizator;
     }
 
-    public void train(ArrayList<Data> trainData){
+    public void train(String text, ArrayList<String> data){
         //TODO natrenovat model
-    }
-
-    public double test(ArrayList<Data> testData){
-        double testingDataLength = testData.size();
-        int numOfErrors = 0;
-
-        //TODO otestovat vse pomoci getClass a porovnat vysledky se spravnymi daty
-
-        double acc = 1-(numOfErrors/testingDataLength);
-        return acc;
     }
 
     public String getClass(String text){

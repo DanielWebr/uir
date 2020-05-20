@@ -18,4 +18,3 @@ ved
 voj
 zdr
 zem
-ost
