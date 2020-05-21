@@ -6,7 +6,12 @@ import uir.Containers.Data;
 import uir.Containers.ParamData;
 
 import javax.swing.*;
+import javax.swing.event.AncestorListener;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 import java.awt.*;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -110,9 +115,41 @@ public class Main {
 
         double accuracy = testData(testData,model);
 
-        //TODO ulozit model
+        saveModel(model,modelName);
 
         System.out.println("Model saved, accuracy: "+accuracy+"%");
+    }
+
+    public static void saveModel(Model model, String name){
+        try {
+            FileOutputStream f = new FileOutputStream(new File("savedModels\\"+name+".obj"));
+            ObjectOutputStream o = new ObjectOutputStream(f);
+            o.writeObject(model);
+            o.close();
+            f.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found");
+        } catch (IOException e) {
+            System.out.println("Error initializing stream");
+        }
+    }
+
+    public static Model loadModel(String name){
+        Model model = null;
+        try {
+            FileInputStream fi = new FileInputStream(new File("savedModels\\"+name+".obj"));
+            ObjectInputStream oi = new ObjectInputStream(fi);
+            model = (Model) oi.readObject();
+            oi.close();
+            fi.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found");
+        } catch (IOException e) {
+            System.out.println("Error initializing stream");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return model;
     }
 
     public static double testData(ArrayList<Data> testData, Model model){
@@ -121,7 +158,6 @@ public class Main {
 
         for(Data data : testData){
             String resultClass = model.getClass(data.getText());
-            System.out.println(resultClass+" "+ Arrays.toString(data.getClasses().toArray()));
             if(!data.getClasses().contains(resultClass)){
                 numOfErrors++;
             }
@@ -135,11 +171,12 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setPreferredSize(new Dimension(800,600));
         frame.setLayout(new BorderLayout());
+        frame.setTitle("UIR text classification");
 
         JPanel northPanel = new JPanel();
         northPanel.setLayout(new FlowLayout());
 
-        JLabel modelNameLabel = new JLabel("uir.Model: "+modelName);
+        JLabel modelNameLabel = new JLabel("model: "+modelName);
         JLabel resultClassLabel = new JLabel("Class: ");
         northPanel.add(modelNameLabel);
         northPanel.add(Box.createHorizontalStrut(10));
@@ -147,27 +184,44 @@ public class Main {
         frame.add(northPanel,BorderLayout.NORTH);
 
         JButton classifyButton = new JButton("Classify");
+        classifyButton.setEnabled(false);
         frame.add(classifyButton,BorderLayout.SOUTH);
 
         JTextArea textArea = new JTextArea();
+        textArea.setLineWrap(true);
+        frame.add(Box.createHorizontalStrut(10),BorderLayout.WEST);
+        frame.add(Box.createHorizontalStrut(10),BorderLayout.EAST);
         frame.add(textArea,BorderLayout.CENTER);
 
-        Model model = null;
-        //TODO nacist model ze souboru
+        Model model = loadModel(modelName);
 
         classifyButton.addActionListener(e -> {
-            String resultClass = getTextClass(model,textArea.getText() );
-            resultClassLabel.setText("Class: "+resultClass);
+            String resultClass =  model.getClass(textArea.getText() );
+            resultClassLabel.setText("Class: "+classToString(resultClass));
+        });
+
+        textArea.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                if(textArea.getText().equals(""))classifyButton.setEnabled(false);
+                else classifyButton.setEnabled(true);
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                if(textArea.getText().equals(""))classifyButton.setEnabled(false);
+                else classifyButton.setEnabled(true);
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+
+            }
         });
 
         frame.pack();
         frame.setResizable(false);
         frame.setVisible(true);
-    }
-
-    private static String getTextClass(Model model, String text) {
-        //TODO return model.getClass(text);
-        return "";
     }
 
     private static ArrayList<Data> getDataFromFiles(File[] files) throws IOException {
@@ -195,5 +249,73 @@ public class Main {
         return data;
     }
 
+    public static String classToString(String classificationClass){
+        switch(classificationClass){
+            case "ces":{
+                return "CESTOVÁNÍ";
+            }
+            case "dop":{
+                return "DOPRAVA";
+            }
+            case "fin":{
+                return "FINANČNICTVÍ A OBCHOD";
+            }
+            case "kri":{
+                return "KRIMINALITA A PRÁVO";
+            }
+            case "kul":{
+                return "KULTURA";
+            }
+            case "nab":{
+                return "NÁBOŽENSTVÍ";
+            }
+            case "nes":{
+                return "NEŠTĚSTÍ A KATASTROFY";
+            }
+            case "pol":{
+                return "POLITIKA";
+            }
+            case "pri":{
+                return "PŘÍRODA A POČASÍ";
+            }
+            case "pru":{
+                return "PRŮMYSL";
+            }
+            case "reg":{
+                return "REGION";
+            }
+            case "rek":{
+                return "REKLAMA";
+            }
+            case "sko":{
+                return "ŠKOLSTVÍ";
+            }
+            case "slu":{
+                return "SLUŽBY";
+            }
+            case "soc":{
+                return "SOCIÁLNÍ PROBLEMATIKA";
+            }
+            case "spo":{
+                return "SPORT";
+            }
+            case "ved":{
+                return "VĚDA A TECHNIKA";
+            }
+            case "zdr":{
+                return "ZDRAVOTNICTVÍ";
+            }
+            case "voj":{
+                return "VOJENSTVÍ";
+            }
+            case "zem":{
+                return "ZEMĚDĚLSTVÍ";
+            }
+            case "ost":{
+                return "OSTATNÍ";
+            }
+        }
+        return "EROR";
+    }
 
 }

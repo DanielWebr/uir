@@ -1,11 +1,9 @@
 package uir.Classificators;
 
-import uir.Containers.ParamData;
+import java.io.Serializable;
 
-import java.util.ArrayList;
-
-public abstract class Classificator {
-
-    public abstract String getClass(byte[] parameter);
+public abstract class Classificator implements Serializable {
+    private static final long serialVersionUID = 3L;
+    public abstract String getClass(double[] parameter);
 
 }

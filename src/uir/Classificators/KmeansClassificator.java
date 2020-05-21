@@ -16,7 +16,7 @@ public class KmeansClassificator extends Classificator {
 
             for(ParamData pd : paramData){
                 if(!pd.getClasses().contains(classificationClass))continue;
-                byte[] parameter = pd.getParameter();
+                double[] parameter = pd.getParameter();
                 for(int index = 0; index < parameter.length; index++){
                     center[index]+= parameter[index];
                 }
@@ -33,7 +33,7 @@ public class KmeansClassificator extends Classificator {
     }
 
     @Override
-    public String getClass(byte[] parameter) {
+    public String getClass(double[] parameter) {
         double minDistance = Double.MAX_VALUE;
         String minDistanceClass = "";
         for(String classificationClass : training.keySet()){

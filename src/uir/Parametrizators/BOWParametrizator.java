@@ -5,7 +5,7 @@ import java.util.*;
 
 //bagsofwords
 public class BOWParametrizator extends Parametrizator{
-    private int MAX_DICTIONARY_SIZE = 100000;
+    private int MAX_DICTIONARY_SIZE = 4000;
     private int NUM_OF_MOST_FREQ_WORD_IGNOR = 0;
    private ArrayList<String> dictionary= new ArrayList<>();
 
@@ -42,14 +42,13 @@ public class BOWParametrizator extends Parametrizator{
                 }
             }
         }
-
-        System.out.println(dictionary.toString());
+        //System.out.println(dictionary.toString());
     }
 
     @Override
-    public byte[] getParameter (String text){
+    public double[] getParameter (String text){
         int dictionarySize=dictionary.size();
-        byte[]parameter=new byte[dictionarySize];
+        double[]parameter=new double[dictionarySize];
         Iterator<String> dictionaryIterator=dictionary.iterator();
         String[] words=text.replaceAll("[^a-zA-Z ]", "").toLowerCase().split("\\s+");
 

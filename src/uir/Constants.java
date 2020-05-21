@@ -7,7 +7,7 @@ enum ClassificatorType {
 
 enum ParametrizatorType {
      BOW,
-     CUSTOM2,
+     TDIDF,
      CUSTOM3
 }
 

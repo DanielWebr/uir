@@ -3,46 +3,50 @@ package uir.Classificators;
 import uir.Containers.ParamData;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
 public class BayesClassificator extends Classificator {
-    Map<String,int[]> training = new HashMap<>();
+    Map<String,ArrayList<double[]>> training = new HashMap<>();
     int numberOfTrainingData = 0;
+    int numberOfUniqueWords = 0;
 
     public BayesClassificator(ArrayList<String> classes,ArrayList<ParamData> paramData){
+        ArrayList<double[]> AllParams = new ArrayList<>();
+
         for(String classificationClass : classes){
-            training.put(classificationClass,new int[paramData.get(0).getParameter().length]);
+            training.put(classificationClass,new ArrayList<>());
         }
 
         for(ParamData data : paramData){
-            byte [] param = data.getParameter();
+            AllParams.add(data.getParameter());
             for(String classificationClass : data.getClasses()){
-                int[] classificationClassParam = training.get(classificationClass);
-                for(int index = 0; index < param.length;index++){
-                    classificationClassParam[index]+=param[index];
-                }
+                if(classificationClass.equals("err"))continue;
+                ArrayList<double[]> classificationClassParam = training.get(classificationClass);
+                classificationClassParam.add(data.getParameter());
+                numberOfTrainingData++;
             }
         }
 
+        double[] wordCountInClass = getWordCountInClass(AllParams);
+        numberOfUniqueWords = getNumberOfUniqueWords(wordCountInClass);
     }
 
     @Override
-    public String getClass(byte[] parameter) {
+    public String getClass(double[] parameter) {
         double maxProp = Double.NEGATIVE_INFINITY;
         String maxPropClass = "";
         for(String classificationClass : training.keySet()){
-            ArrayList<byte[]> classificationClassParam = training.get(classificationClass);
-            double classProp = classificationClassParam.size()/(float)numberOfTrainingData;
-            System.out.print(classificationClass+" ");
-            System.out.print(classificationClassParam.size()+"/"+numberOfTrainingData) ;
+            ArrayList<double[]> classificationClassParam = training.get(classificationClass);
+            int classificationClassParamSize = classificationClassParam.size();
+            double[] wordCountInClass = getWordCountInClass(classificationClassParam);
+            int numberOfWords = getNumberOfWords(wordCountInClass);
+            double classProp = Math.log10(classificationClassParamSize/(float)numberOfTrainingData);
+
             for(int index = 0; index < parameter.length;index++){
                 if(parameter[index]==0)continue;
-               System.out.print(" * "+getNumberOfSimilar(index,classificationClassParam, parameter)+"/"+((float)classificationClassParam.size()+1)) ;
-                classProp*= getNumberOfSimilar(index,classificationClassParam, parameter)/((float)classificationClassParam.size()+1);
+                classProp+=  Math.log10((wordCountInClass[index]+1) / ((double)numberOfWords+numberOfUniqueWords+1));
             }
-            System.out.println(" = "+classProp+" ");
             if(classProp>maxProp){
                 maxProp = classProp;
                 maxPropClass=classificationClass;
@@ -51,14 +55,29 @@ public class BayesClassificator extends Classificator {
         return maxPropClass;
     }
 
-    private int getNumberOfSimilar(int index,ArrayList<byte[]> trainingParameters,byte[] parameter){
-        int count = 0;
-        for(byte[] trainingParam : trainingParameters){
-            if(trainingParam[index]==parameter[index]){
-                count++;
-            }
+    private double[] getWordCountInClass(ArrayList<double[]> classificationClassParam) {
+        double[] count = new double[classificationClassParam.get(0).length];
+        for(int index = 0; index < count.length;index++){
+            int finalIndex = index;
+            classificationClassParam.forEach(par -> count[finalIndex]+=par[finalIndex]);
         }
-        return count+1;
+        return count;
+    }
+
+    private int getNumberOfWords(double[] param) {
+        int count = 0;
+        for(int index = 0; index < param.length;index++){
+            if(param[index]!=0)count+=param[index];
+        }
+        return count;
+    }
+
+    private int getNumberOfUniqueWords(double[] param) {
+        int count = 0;
+        for(int index = 0; index < param.length;index++){
+            if(param[index]!=0)count++;
+        }
+        return count;
     }
 
 }

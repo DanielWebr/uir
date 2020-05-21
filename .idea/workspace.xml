@@ -2,536 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83ec2419-d5a7-483c-9ecb-50b3e7e9d724" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/uir/Classificators/KmeansClassificator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uir/Containers/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uir/Containers/ParamData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uir/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uir/Parametrizators/BOWParametrizator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/dandu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/dandu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-04-n1_0050_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-04-n1_0050_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-04-n1_0050_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-04-n1_0060_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-04-n1_0060_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-04-n1_0060_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-04-n1_0060_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-04-n1_0060_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0065_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0065_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0070_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0070_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0070_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0075_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0075_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0075_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0080_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0080_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0080_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0080_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0080_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0080_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-11-n2_0080_9.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-18-n3_0085_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-18-n3_0085_13.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-18-n3_0090_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-01-18-n3_0090_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0145_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0145_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0145_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0150_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0150_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0150_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0150_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0155_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0155_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0155_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0160_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0160_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0160_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0160_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0160_19.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0160_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0160_22.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0160_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0160_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-08-n6_0160_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0165_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0165_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0165_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0165_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0165_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0165_18.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0170_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0170_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0170_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0170_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0175_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0175_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0175_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0175_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0180_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0180_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0180_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0180_13.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0180_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0180_20.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0180_23.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0180_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-15-n7_0180_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-22-n8_0185_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-22-n8_0185_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-22-n8_0185_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-22-n8_0185_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-22-n8_0185_9.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-22-n8_0190_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-22-n8_0190_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-22-n8_0190_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-22-n8_0190_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-22-n8_0190_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-22-n8_0190_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1873-02-22-n8_0190_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0165_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0165_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0165_13.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0165_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0165_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0165_9.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0170_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0170_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0170_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0170_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0170_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0170_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0175_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0175_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0175_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0175_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/posel-od-cerchova-1874-02-14-n7_0175_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1873-01-04-n1_0050_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1873-01-04-n1_0055_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1873-01-04-n1_0055_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1873-01-04-n1_0055_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1873-01-04-n1_0055_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1873-01-04-n1_0055_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1873-01-04-n1_0055_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1873-01-04-n1_0060_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-14-n7_0180_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-14-n7_0180_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-14-n7_0180_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-14-n7_0180_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-14-n7_0180_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-14-n7_0180_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-14-n7_0180_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-14-n7_0180_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-14-n7_0180_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0185_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0185_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0185_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0185_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0185_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0185_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0185_9.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0190_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0190_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0190_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0190_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0190_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0190_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0190_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0190_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0195_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0195_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0195_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0195_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0195_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0195_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0195_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0200_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0200_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0200_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0200_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0200_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0200_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-21-n8_0200_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0205_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0205_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0205_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0205_13.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0205_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0205_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0205_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0205_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0210_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0210_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0210_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0210_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0210_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0210_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1874-02-28-n9_0210_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-01-23-n4_0105_23.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-01-30-n5_0140_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-01-30-n5_0140_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-01-30-n5_0140_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-01-30-n5_0140_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-01-30-n5_0140_18.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-01-30-n5_0140_21.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-01-30-n5_0140_24.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-01-30-n5_0140_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-01-30-n5_0140_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0145_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0145_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0145_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0145_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0145_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0145_18.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0145_19.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0150_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0150_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0150_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0150_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0150_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0150_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0155_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0155_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0155_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0155_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0155_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0160_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0160_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0160_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0160_13.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0160_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0160_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0160_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-06-n6_0160_9.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0165_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0165_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0165_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0165_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0165_18.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0165_19.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0170_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0170_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0170_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0170_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0175_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0175_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0175_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0175_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0175_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0175_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_13.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_19.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_20.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-13-n7_0180_9.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-20-n8_0185_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-20-n8_0185_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-20-n8_0185_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-20-n8_0185_18.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-20-n8_0185_20.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-20-n8_0185_21.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-20-n8_0185_22.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-20-n8_0190_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-20-n8_0190_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-20-n8_0190_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-20-n8_0195_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-20-n8_0195_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-27-n9_0205_20.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-27-n9_0205_23.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-27-n9_0205_24.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-27-n9_0210_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-27-n9_0210_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1892-02-27-n9_0215_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-07-n2_0065_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-07-n2_0070_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-07-n2_0070_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-07-n2_0075_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-07-n2_0080_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-14-n3_0085_26.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-14-n3_0090_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-14-n3_0095_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-14-n3_0095_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-14-n3_0100_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-21-n4_0110_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-21-n4_0115_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0130_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0135_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0135_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0135_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0140_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0140_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0140_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0140_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0140_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0140_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0140_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0140_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0140_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-01-28-n5_0140_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0145_13.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0145_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0145_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0145_19.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0145_20.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0145_21.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0145_22.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0145_25.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0145_27.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0145_28.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0145_29.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0145_30.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0150_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0150_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0150_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0155_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0155_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0160_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0160_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0160_18.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0160_19.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0160_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0160_21.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0160_22.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0160_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0160_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-04-n6_0160_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0165_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0165_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0165_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0165_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0165_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0165_19.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0170_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0170_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0170_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0170_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0170_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0175_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0175_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0175_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0175_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0175_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0175_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0175_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0180_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0180_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0180_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0180_18.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0180_19.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0180_24.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0180_30.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0180_32.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0180_33.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0180_35.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0180_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-11-n7_0180_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0185_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0185_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0185_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0185_18.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0185_19.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0185_21.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0190_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0190_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0190_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0190_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0195_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0195_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0195_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0195_13.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0195_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0195_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0195_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0195_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0195_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0200_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0200_19.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0200_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-18-n8_0200_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0205_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0205_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0205_13.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0205_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0205_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0205_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0205_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0215_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0215_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0215_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0215_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0220_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0220_23.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0225_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0225_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0225_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0225_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0225_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0225_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0225_9.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0230_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0230_13.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0230_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0230_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0230_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0230_18.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0230_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-02-25-n9_0230_9.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-03-04-n10_0235_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-03-04-n10_0235_20.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-03-04-n10_0235_21.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-03-04-n10_0235_23.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-03-04-n10_0235_25.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-03-04-n10_0235_26.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-03-04-n10_0240_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-03-04-n10_0240_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1893-03-04-n10_0240_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0045_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0045_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0045_18.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0045_20.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0045_21.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0045_23.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0045_24.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0045_25.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0045_26.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0050_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0050_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0050_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0050_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0050_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0055_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0055_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0055_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0055_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0055_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0055_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0055_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0060_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0060_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0060_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0060_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0060_24.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0060_25.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0060_27.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0060_28.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0060_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0060_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0065_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0065_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0065_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0065_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0065_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0065_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0065_9.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0070_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0070_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0070_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0070_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0070_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0070_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0070_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-01-n1_0070_9.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0075_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0075_13.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0075_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0075_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0075_18.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0075_20.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0075_22.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0075_23.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0075_25.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0075_26.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0080_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0080_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0080_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0080_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0085_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0085_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0085_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0085_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0090_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0090_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0090_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0090_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0090_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0090_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0090_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0090_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-05-n2_0090_9.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0095_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0095_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0095_13.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0095_14.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0095_15.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0095_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0095_9.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0100_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0105_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0105_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0105_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0105_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0105_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0105_7.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0110_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0110_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0110_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0110_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0110_18.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0110_19.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0110_21.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0110_23.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0110_3.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0110_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0110_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-13-n3_0110_9.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0115_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0115_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0115_13.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0115_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0115_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0115_8.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0120_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0120_2.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0125_0.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0125_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0130_1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0130_10.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0130_11.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0130_12.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0130_16.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0130_17.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0130_18.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0130_19.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0130_21.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0130_4.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0130_5.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0130_6.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/posel-od-cerchova-1900-01-20-n4_0130_8.lab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/data1.lab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (2).lab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (3).lab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (4).lab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (5).lab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (6).lab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (7).lab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (8).lab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie.lab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train/data1.lab" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/classes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classificators/BayesClassificator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Classificators/BayesClassificator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classificators/Classificator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Classificators/Classificator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classificators/Custom1Classificator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parametrizators/Custom1Parametrizator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parametrizators/Custom2Parametrizator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Parametrizators/Custom2Parametrizator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parametrizators/Custom3Parametrizator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Parametrizators/Custom3Parametrizator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parametrizators/Parametrizator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Parametrizators/Parametrizator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uir/Classificators/BayesClassificator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Classificators/BayesClassificator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uir/Classificators/Classificator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Classificators/Classificator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uir/Classificators/KmeansClassificator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Classificators/KmeansClassificator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uir/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uir/Containers/ParamData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Containers/ParamData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uir/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uir/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uir/Parametrizators/BOWParametrizator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Parametrizators/BOWParametrizator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uir/Parametrizators/Custom2Parametrizator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Parametrizators/TFIDFParametrizator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uir/Parametrizators/Custom3Parametrizator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Parametrizators/NGramParametrizator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uir/Parametrizators/Parametrizator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Parametrizators/Parametrizator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -577,11 +70,11 @@
       <recent name="C:\uirKlasifikator" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Train bow bayes">
+  <component name="RunManager" selected="Application.Train tdidf kmeans">
     <configuration name="Train bow bayes" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="uir.Main" />
       <module name="uirKlasifikator" />
-      <option name="PROGRAM_PARAMETERS" value="classes.txt Train Test bow bayes BayesPar1" />
+      <option name="PROGRAM_PARAMETERS" value="classes.txt Train Test bow bayes bowBayes" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -589,21 +82,48 @@
     <configuration name="Train bow kmeans" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="uir.Main" />
       <module name="uirKlasifikator" />
-      <option name="PROGRAM_PARAMETERS" value="classes.txt Train Test bow kmeans BayesPar1" />
+      <option name="PROGRAM_PARAMETERS" value="classes.txt Train Test bow kmeans bowKmeans" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bayer1" type="Application" factoryName="Application">
+    <configuration name="Train tdidf bayes" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="uir.Main" />
       <module name="uirKlasifikator" />
-      <option name="PROGRAM_PARAMETERS" value="bayer1" />
+      <option name="PROGRAM_PARAMETERS" value="classes.txt Train Test tdidf bayes bowBayes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Train tdidf kmeans" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="uir.Main" />
+      <module name="uirKlasifikator" />
+      <option name="PROGRAM_PARAMETERS" value="classes.txt Train Test tdidf kmeans bowKmeans" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bowBayes" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="uir.Main" />
+      <module name="uirKlasifikator" />
+      <option name="PROGRAM_PARAMETERS" value="bowBayes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bowKmeans" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="uir.Main" />
+      <module name="uirKlasifikator" />
+      <option name="PROGRAM_PARAMETERS" value="bowKmeans" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.bayer1" />
+      <item itemvalue="Application.bowBayes" />
+      <item itemvalue="Application.bowKmeans" />
+      <item itemvalue="Application.Train tdidf kmeans" />
+      <item itemvalue="Application.Train tdidf bayes" />
       <item itemvalue="Application.Train bow bayes" />
       <item itemvalue="Application.Train bow kmeans" />
     </list>
@@ -626,18 +146,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589877622836" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590060695241">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590079934571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590060695241" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590079934571" />
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1590001926419">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590001926419" />
-    <state x="689" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590052778010">
+    <state x="689" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590079915410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590052778010" />
+    <state x="689" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590079915410" />
     <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590051542869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -646,42 +166,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="31" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590002116086" />
-    <state width="465" height="466" key="DebuggerActiveHint" timestamp="1590070116520">
+    <state width="465" height="466" key="DebuggerActiveHint" timestamp="1590080244870">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="465" height="466" key="DebuggerActiveHint/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590070116520" />
-    <state width="1877" height="182" key="GridCell.Tab.0.bottom" timestamp="1590070071946">
+    <state width="465" height="466" key="DebuggerActiveHint/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590080244870" />
+    <state width="1877" height="176" key="GridCell.Tab.0.bottom" timestamp="1590082515415">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590070071946" />
-    <state width="1877" height="182" key="GridCell.Tab.0.center" timestamp="1590070071946">
+    <state width="1877" height="176" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590082515415" />
+    <state width="1877" height="176" key="GridCell.Tab.0.center" timestamp="1590082515414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590070071946" />
-    <state width="1877" height="182" key="GridCell.Tab.0.left" timestamp="1590070071946">
+    <state width="1877" height="176" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590082515414" />
+    <state width="1877" height="176" key="GridCell.Tab.0.left" timestamp="1590082515414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590070071946" />
-    <state width="1877" height="182" key="GridCell.Tab.0.right" timestamp="1590070071946">
+    <state width="1877" height="176" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590082515414" />
+    <state width="1877" height="176" key="GridCell.Tab.0.right" timestamp="1590082515414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590070071946" />
-    <state width="1877" height="182" key="GridCell.Tab.1.bottom" timestamp="1590070071946">
+    <state width="1877" height="176" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590082515414" />
+    <state width="1877" height="182" key="GridCell.Tab.1.bottom" timestamp="1590080883816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590070071946" />
-    <state width="1877" height="182" key="GridCell.Tab.1.center" timestamp="1590070071946">
+    <state width="1877" height="182" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590080883816" />
+    <state width="1877" height="182" key="GridCell.Tab.1.center" timestamp="1590080883816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590070071946" />
-    <state width="1877" height="182" key="GridCell.Tab.1.left" timestamp="1590070071946">
+    <state width="1877" height="182" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590080883816" />
+    <state width="1877" height="182" key="GridCell.Tab.1.left" timestamp="1590080883808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590070071946" />
-    <state width="1877" height="182" key="GridCell.Tab.1.right" timestamp="1590070071946">
+    <state width="1877" height="182" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590080883808" />
+    <state width="1877" height="182" key="GridCell.Tab.1.right" timestamp="1590080883816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590070071946" />
+    <state width="1877" height="182" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590080883816" />
     <state width="1918" height="528" key="XDebugger.FullValuePopup" timestamp="1589958524407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -694,21 +214,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589957745362" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590053830849">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590081145029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590053830849" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590081145029" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uir/Classificators/BayesClassificator.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="wordCount" />

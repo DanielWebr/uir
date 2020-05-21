@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class ParamData {
     private ArrayList<String> classes;
-    private byte[] parameter;
+    private double[] parameter;
 
-    public ParamData(ArrayList<String> classes, byte[] parameter ) {
+    public ParamData(ArrayList<String> classes, double[] parameter ) {
         this.classes = classes;
         this.parameter = parameter;
     }
@@ -15,7 +15,7 @@ public class ParamData {
         return classes;
     }
 
-    public byte[] getParameter() {
+    public double[] getParameter() {
         return parameter;
     }
 }
