@@ -8,6 +8,6 @@ enum ClassificatorType {
 enum ParametrizatorType {
      BOW,
      TDIDF,
-     CUSTOM3
+     NGRAM
 }
 

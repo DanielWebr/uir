@@ -2,29 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83ec2419-d5a7-483c-9ecb-50b3e7e9d724" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/data1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (2).lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (3).lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (4).lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (5).lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (6).lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (7).lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie (8).lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/data1 - kopie.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train/data1.lab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/classes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uir/Classificators/BayesClassificator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Classificators/BayesClassificator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uir/Classificators/Classificator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Classificators/Classificator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uir/Classificators/KmeansClassificator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Classificators/KmeansClassificator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uir/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uir/Containers/ParamData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Containers/ParamData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uir/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uir/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uir/Parametrizators/BOWParametrizator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Parametrizators/BOWParametrizator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uir/Parametrizators/Custom2Parametrizator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Parametrizators/TFIDFParametrizator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uir/Parametrizators/Custom3Parametrizator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Parametrizators/NGramParametrizator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uir/Parametrizators/Parametrizator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Parametrizators/Parametrizator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uir/Parametrizators/NGramParametrizator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uir/Parametrizators/NGramParametrizator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +53,7 @@
       <recent name="C:\uirKlasifikator" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Train tdidf kmeans">
+  <component name="RunManager" selected="Application.bowBayes">
     <configuration name="Train bow bayes" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="uir.Main" />
       <module name="uirKlasifikator" />
@@ -87,10 +70,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Train ngram bayes" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="uir.Main" />
+      <module name="uirKlasifikator" />
+      <option name="PROGRAM_PARAMETERS" value="classes.txt Train Test ngram bayes ngramBayes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Train ngram kmeans" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="uir.Main" />
+      <module name="uirKlasifikator" />
+      <option name="PROGRAM_PARAMETERS" value="classes.txt Train Test ngram kmeans ngramKmeans" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Train tdidf bayes" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="uir.Main" />
       <module name="uirKlasifikator" />
-      <option name="PROGRAM_PARAMETERS" value="classes.txt Train Test tdidf bayes bowBayes" />
+      <option name="PROGRAM_PARAMETERS" value="classes.txt Train Test tdidf bayes tdidfBayes" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,7 +97,7 @@
     <configuration name="Train tdidf kmeans" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="uir.Main" />
       <module name="uirKlasifikator" />
-      <option name="PROGRAM_PARAMETERS" value="classes.txt Train Test tdidf kmeans bowKmeans" />
+      <option name="PROGRAM_PARAMETERS" value="classes.txt Train Test tdidf kmeans tdidfKmeans" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,11 +118,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ngramBayes" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="uir.Main" />
+      <module name="uirKlasifikator" />
+      <option name="PROGRAM_PARAMETERS" value="ngramBayes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ngramKmeans" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="uir.Main" />
+      <module name="uirKlasifikator" />
+      <option name="PROGRAM_PARAMETERS" value="ngramKmeans" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tdidfBayes" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="uir.Main" />
+      <module name="uirKlasifikator" />
+      <option name="PROGRAM_PARAMETERS" value="tdidfBayes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tdidfKmeans" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="uir.Main" />
+      <module name="uirKlasifikator" />
+      <option name="PROGRAM_PARAMETERS" value="tdidfKmeans" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.ngramBayes" />
+      <item itemvalue="Application.ngramKmeans" />
+      <item itemvalue="Application.tdidfBayes" />
+      <item itemvalue="Application.tdidfKmeans" />
       <item itemvalue="Application.bowBayes" />
       <item itemvalue="Application.bowKmeans" />
-      <item itemvalue="Application.Train tdidf kmeans" />
+      <item itemvalue="Application.Train ngram bayes" />
+      <item itemvalue="Application.Train ngram kmeans" />
       <item itemvalue="Application.Train tdidf bayes" />
+      <item itemvalue="Application.Train tdidf kmeans" />
       <item itemvalue="Application.Train bow bayes" />
       <item itemvalue="Application.Train bow kmeans" />
     </list>
@@ -146,18 +183,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589877622836" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590079934571">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590137105976">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590079934571" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590137105976" />
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1590001926419">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590001926419" />
-    <state x="689" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590079915410">
+    <state x="689" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590134261668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590079915410" />
+    <state x="689" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590134261668" />
     <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590051542869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -166,50 +203,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="31" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590002116086" />
-    <state width="465" height="466" key="DebuggerActiveHint" timestamp="1590080244870">
+    <state width="465" height="466" key="DebuggerActiveHint" timestamp="1590135246063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="465" height="466" key="DebuggerActiveHint/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590080244870" />
-    <state width="1877" height="176" key="GridCell.Tab.0.bottom" timestamp="1590082515415">
+    <state width="465" height="466" key="DebuggerActiveHint/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590135246063" />
+    <state width="1877" height="237" key="GridCell.Tab.0.bottom" timestamp="1590138001088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590082515415" />
-    <state width="1877" height="176" key="GridCell.Tab.0.center" timestamp="1590082515414">
+    <state width="1877" height="237" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590138001088" />
+    <state width="1877" height="237" key="GridCell.Tab.0.center" timestamp="1590138001088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590082515414" />
-    <state width="1877" height="176" key="GridCell.Tab.0.left" timestamp="1590082515414">
+    <state width="1877" height="237" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590138001088" />
+    <state width="1877" height="237" key="GridCell.Tab.0.left" timestamp="1590138001088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590082515414" />
-    <state width="1877" height="176" key="GridCell.Tab.0.right" timestamp="1590082515414">
+    <state width="1877" height="237" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590138001088" />
+    <state width="1877" height="237" key="GridCell.Tab.0.right" timestamp="1590138001088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590082515414" />
-    <state width="1877" height="182" key="GridCell.Tab.1.bottom" timestamp="1590080883816">
+    <state width="1877" height="237" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590138001088" />
+    <state width="1877" height="262" key="GridCell.Tab.1.bottom" timestamp="1590136063601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590080883816" />
-    <state width="1877" height="182" key="GridCell.Tab.1.center" timestamp="1590080883816">
+    <state width="1877" height="262" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590136063601" />
+    <state width="1877" height="262" key="GridCell.Tab.1.center" timestamp="1590136063601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590080883816" />
-    <state width="1877" height="182" key="GridCell.Tab.1.left" timestamp="1590080883808">
+    <state width="1877" height="262" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590136063601" />
+    <state width="1877" height="262" key="GridCell.Tab.1.left" timestamp="1590136063601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590080883808" />
-    <state width="1877" height="182" key="GridCell.Tab.1.right" timestamp="1590080883816">
+    <state width="1877" height="262" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590136063601" />
+    <state width="1877" height="262" key="GridCell.Tab.1.right" timestamp="1590136063601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590080883816" />
+    <state width="1877" height="262" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590136063601" />
     <state width="1918" height="528" key="XDebugger.FullValuePopup" timestamp="1589958524407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1918" height="528" key="XDebugger.FullValuePopup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589958524407" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589979055742">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590132244699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589979055742" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590132244699" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1589957745362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -220,6 +257,15 @@
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590081145029" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/uir/Parametrizators/NGramParametrizator.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="wordCount" />

@@ -29,8 +29,8 @@ public class Model implements Serializable {
                 parametrizator = new TFIDFParametrizator(trainData);
                 break;
             }
-            case CUSTOM3:{
-                parametrizator = new NGramParametrizator();
+            case NGRAM:{
+                parametrizator = new NGramParametrizator(trainData);
                 break;
             }
             default:

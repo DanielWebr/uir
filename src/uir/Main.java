@@ -18,39 +18,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-       /* ArrayList<String> classes1 = new ArrayList<String>();
-        classes1.add("ano");
-        classes1.add("ne");
-        ArrayList<ParamData> pd = new ArrayList<ParamData>();
-
-        ArrayList<String> pd1c = new ArrayList<String>();
-        pd1c.add("ano");
-        ParamData pd1 = new ParamData(pd1c,new byte[]{1,1,0});
-        pd.add(pd1);
-
-        ArrayList<String> pd2c = new ArrayList<String>();
-        pd2c.add("ano");
-        ParamData pd2 = new ParamData(pd2c,new byte[]{1,1,1});
-        pd.add(pd2);
-
-        ArrayList<String> pd3c = new ArrayList<String>();
-        pd3c.add("ano");
-        ParamData pd3 = new ParamData(pd3c,new byte[]{0,1,1});
-        pd.add(pd3);
-
-        ArrayList<String> pd4c = new ArrayList<String>();
-        pd4c.add("ne");
-        ParamData pd4 = new ParamData(pd4c,new byte[]{0,0,0});
-        pd.add(pd4);
-
-        ArrayList<String> pd5c = new ArrayList<String>();
-        pd5c.add("ne");
-        ParamData pd5 = new ParamData(pd5c,new byte[]{0,1,0});
-        pd.add(pd5);
-
-        KmeansClassificator bc = new KmeansClassificator(classes1,pd);
-        System.out.print(bc.getClass(new byte[]{0,0,1}));*/
-
+        System.out.println("Program started");
         boolean trainMode = args.length == 6;
         boolean classificationsMode = args.length == 1;
         if(!trainMode && !classificationsMode){
@@ -111,30 +79,31 @@ public class Main {
     }
 
     public static void train(ArrayList<String> classes, ArrayList<Data> trainData, ArrayList<Data> testData, ClassificatorType classificatorType, ParametrizatorType parametrizatorType, String modelName)  {
+        System.out.println("Training model modelName -> classification: "+classificatorType.name()+", parametrization: "+parametrizatorType.name());
         Model model = new Model(classificatorType,parametrizatorType,trainData, classes);
-
+        System.out.println("Testing model ");
         double accuracy = testData(testData,model);
-
-        saveModel(model,modelName);
-
-        System.out.println("Model saved, accuracy: "+accuracy+"%");
+        System.out.println("--- Model accuracy "+accuracy+" ---");
+        System.out.println("Saving model");
+        try {
+            saveModel(model,modelName);
+            System.out.println("Model saved to savedModels folder");
+        } catch (IOException e) {
+            System.out.println("Error saving model");
+        }
+        System.out.println("Program end...");
     }
 
-    public static void saveModel(Model model, String name){
-        try {
-            FileOutputStream f = new FileOutputStream(new File("savedModels\\"+name+".obj"));
-            ObjectOutputStream o = new ObjectOutputStream(f);
-            o.writeObject(model);
-            o.close();
-            f.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found");
-        } catch (IOException e) {
-            System.out.println("Error initializing stream");
-        }
+    public static void saveModel(Model model, String name) throws IOException {
+        FileOutputStream f = new FileOutputStream(new File("savedModels\\"+name+".obj"));
+        ObjectOutputStream o = new ObjectOutputStream(f);
+        o.writeObject(model);
+        o.close();
+        f.close();
     }
 
     public static Model loadModel(String name){
+        System.out.println("Loading model "+name);
         Model model = null;
         try {
             FileInputStream fi = new FileInputStream(new File("savedModels\\"+name+".obj"));
@@ -142,6 +111,7 @@ public class Main {
             model = (Model) oi.readObject();
             oi.close();
             fi.close();
+            System.out.println("Model loaded");
         } catch (FileNotFoundException e) {
             System.out.println("File not found");
         } catch (IOException e) {
